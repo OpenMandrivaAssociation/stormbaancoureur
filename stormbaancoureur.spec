@@ -1,5 +1,5 @@
 %define name stormbaancoureur
-%define version	2.1.1
+%define version	2.1.2
 %define rel 1
 %define release %mkrel %rel
 
@@ -7,7 +7,7 @@ Summary: Simulated obstacle course for automobiles
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: http://bram.creative4vision.nl/sturmbahnfahrer/download/%{name}-%{version}.tar.gz
+Source0: http://bram.creative4vision.nl/sturmbahnfahrer/download/%{name}-%{version}.tar.bz2
 Source1: %{name}-16.png
 Source2: %{name}-32.png
 Source3: %{name}-48.png
