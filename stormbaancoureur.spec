@@ -1,7 +1,6 @@
 %define name stormbaancoureur
-%define version	2.1.3
-%define rel 1
-%define release %mkrel %rel
+%define version	2.1.4
+%define release %mkrel 1
 
 Summary: Simulated obstacle course for automobiles
 Name: %{name}
