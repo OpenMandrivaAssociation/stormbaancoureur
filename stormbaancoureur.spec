@@ -1,12 +1,12 @@
 Name:			stormbaancoureur
-Version:		2.1.5
-Release:		%mkrel 2
+Version:		2.1.6
+Release:		%mkrel 1
 
 Summary:	Simulated obstacle course for automobiles
-License:	GPL
+License:	GPLv3
 Group:		Games/Arcade
-URL:		http://www.sturmbahnfahrer.com/
-Source0:	http://bram.creative4vision.nl/sturmbahnfahrer/download/%{name}-%{version}.tar.gz
+URL:		http://www.stolk.org/stormbaancoureur/
+Source0:	http://www.stolk.org/stormbaancoureur/download/%{name}-%{version}.tar.gz
 Source1:	stormbaancoureur-16.png
 Source2:	stormbaancoureur-32.png
 Source3:	stormbaancoureur-48.png
@@ -43,10 +43,10 @@ Stormbaan Coureur is a game by Bram Stolk.
 %setup -q -n %{name}-%{version}/src-%{name}
 %patch0 -p0
 # x86_64
-perl -pi -e "s#LIBDIRNAME=lib#LIBDIRNAME=%{_lib}#g" Makefile
-
+sed -i -e "s#LIBDIRNAME=lib#LIBDIRNAME=%{_lib}#g" -e "s#CXXFLAGS=#CXXFLAGS+=#" -e "s#LFLAGS=#LFLAGS+=#" Makefile
 %build
-%make
+LFLAGS="%{ldflags}" CXXFLAGS="%{optflags}" %make
+
 
 %install
 rm -rf %{buildroot}
