@@ -1,6 +1,6 @@
 Name:			stormbaancoureur
 Version:		2.1.6
-Release:		%mkrel 1
+Release:		%mkrel 2
 
 Summary:	Simulated obstacle course for automobiles
 License:	GPLv3
