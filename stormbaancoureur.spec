@@ -5,7 +5,7 @@ Release:		%mkrel 2
 Summary:	Simulated obstacle course for automobiles
 License:	GPLv3
 Group:		Games/Arcade
-URL:		http://www.stolk.org/stormbaancoureur/
+URL:		https://www.stolk.org/stormbaancoureur/
 Source0:	http://www.stolk.org/stormbaancoureur/download/%{name}-%{version}.tar.gz
 Source1:	stormbaancoureur-16.png
 Source2:	stormbaancoureur-32.png
